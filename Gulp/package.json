@@ -1,0 +1,17 @@
+{
+	"dependencies": {
+		"gulp": "*",
+		"gulp-load-plugins": "*"
+	},
+	"devDependencies": {
+		"gulp-concat": "*",
+		"gulp-declare": "*",
+		"gulp-handlebars": "*",
+		"gulp-inject": "*",
+		"gulp-minify-css": "*",
+		"gulp-replace": "*",
+		"gulp-sass": "*",
+		"gulp-uglify": "*",
+		"gulp-util": "*"
+	}
+}
