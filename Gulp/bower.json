@@ -1,0 +1,17 @@
+{
+	"name": "app",
+
+	"dependencies": {
+		"handlebars": "*",
+		"jquery": ">= 2.0"
+	},
+
+	"overrides": {
+		"jquery": {
+			"main": "jquery.js"
+		},
+		"handlebars": {
+			"main": "handlebars.js"
+		}
+	}
+}

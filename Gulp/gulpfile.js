@@ -12,7 +12,8 @@ var files = {
 var paths = {
 	css: './css',
 	js: './js-dev/',
-	jsMin: './js/min'
+	jsMin: './js/min',
+	lib: './js-dev/libraries/'
 };
 
 var regex = {
@@ -66,7 +67,6 @@ gulp.task('concat', function() {
 gulp.task('replace-debug', function(){
 	gulp.src(['./*.jsproj'])
 		.pipe(plugins.replace(regex.jsMin, regexFiles.js))
-		.pipe(plugins.replace(regex.once, ''))
 		.pipe(gulp.dest('./'));
 });
 
@@ -74,11 +74,19 @@ gulp.task('replace-debug', function(){
 gulp.task('replace-build', function(){
 	gulp.src(['./*.jsproj'])
 		.pipe(plugins.replace(regex.js, regexFiles.jsMin))
-		.pipe(plugins.replace(regex.once, ''))
 		.pipe(gulp.dest('./'));
 
 	gulp.src([files.index])
 		.pipe(plugins.replace(regex.inject, regexFiles.alljs))
+		.pipe(gulp.dest('./'));
+});
+
+gulp.task('initialize', function() {
+  plugins.bowerFiles()
+    .pipe(gulp.dest(paths.lib));
+
+  gulp.src(['./*.jsproj'])
+		.pipe(plugins.replace(regex.once, ''))
 		.pipe(gulp.dest('./'));
 });
 

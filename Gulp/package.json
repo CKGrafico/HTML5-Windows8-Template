@@ -3,7 +3,9 @@
 		"gulp": "*",
 		"gulp-load-plugins": "*"
 	},
+
 	"devDependencies": {
+		"gulp-bower-files": "*",
 		"gulp-concat": "*",
 		"gulp-declare": "*",
 		"gulp-handlebars": "*",

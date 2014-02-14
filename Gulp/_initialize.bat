@@ -1,1 +1,1 @@
-npm install
+npm install && bower cache clean && bower install && gulp initialize

@@ -64,7 +64,6 @@
     <Content Include="*.json" />
     <Content Include="*.bat" />
     <Content Include="js\**\*.js" />
-    <Content Include="node_modules\**\*.*" />
     <Content Include="scss\**\*.*" />
     <Content Include="templates\**\*.*" />
     <!-- deleteend -->
