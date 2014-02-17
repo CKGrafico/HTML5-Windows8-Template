@@ -82,10 +82,10 @@ gulp.task('replace-build', function(){
 });
 
 gulp.task('initialize', function() {
-  plugins.bowerFiles()
-    .pipe(gulp.dest(paths.lib));
+	plugins.bowerFiles()
+		.pipe(gulp.dest(paths.lib));
 
-  gulp.src(['./*.jsproj'])
+	gulp.src(['./*.jsproj'])
 		.pipe(plugins.replace(regex.once, ''))
 		.pipe(gulp.dest('./'));
 });
@@ -93,7 +93,7 @@ gulp.task('initialize', function() {
 // Init watch
 gulp.task('watch', function () {
 	gulp.watch(files.js, ['inject', 'replace-debug']);
-	gulp.watch(files.scss, ['sass']);
+	gulp.watch(files.scss, ['sass', 'inject']);
 	gulp.watch(files.templates, ['handlebars']);
 });
 

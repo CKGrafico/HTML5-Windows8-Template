@@ -30,3 +30,7 @@
 
 - To build run _build.bat or command 'gulp build'
     *This change development mode to production*
+
+**TODO**
+- Improve gulp tasks
+- Improve bower dependencies (and remove sizzle when include jQuery :S)

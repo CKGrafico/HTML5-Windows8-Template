@@ -60,12 +60,15 @@
     <Content Include="images\**\*.*" />
     <Content Include="css\**\*.css" />
     <!-- delete -->
-    <Content Include="*.js" />
-    <Content Include="*.json" />
-    <Content Include="*.bat" />
-    <Content Include="js\**\*.js" />
-    <Content Include="scss\**\*.*" />
-    <Content Include="templates\**\*.*" />
+      <Content Include="gulpfile.js" />
+      <Content Include="bower.json" />
+      <Content Include="package.json" />
+      <Content Include="_build.bat" />
+      <Content Include="_initialize.bat" />
+      <Content Include="_watch.bat" />
+      <Content Include="scss\styles.scss" />
+      <Content Include="templates\mytemplate.hbs" />
+      <Content Include="js-dev\default.js" />
     <!-- deleteend -->
 
     <!-- gulp -->

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="gulp..5751e755-6db0-440b-871a-1544b907aa46" Version="1.1" Language="en-US" Publisher="CKGrafico" />
-    <DisplayName>Gulp</DisplayName>
+    <Identity Id="gulp..5751e755-6db0-440b-871a-1544b907aa46" Version="1.6" Language="en-US" Publisher="CKGrafico" />
+    <DisplayName>Gulp + SASS + Handlebars</DisplayName>
     <Description xml:space="preserve">Template for Windows 8.1 HTML5 Apps for use Gulp with SASS and Handlebars</Description>
     <MoreInfo>http://ckgrafico.com</MoreInfo>
     <Icon>icon.png</Icon>
@@ -15,6 +15,6 @@
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
   </Dependencies>
   <Assets>
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Gulp + Handlebars + SASS.zip" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Gulp + SASS + Handlebars.zip" />
   </Assets>
 </PackageManifest>
